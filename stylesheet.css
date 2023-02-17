@@ -10,7 +10,7 @@ nav{
     color: #fff;
     font-family: sans-serif;
     margin: 0 auto;
-    
+
 }
 
 nav li{
@@ -74,7 +74,7 @@ nav li{
     cursor:pointer;
     border:2px solid black;
 
-    
+
 }
 
 #language:hover{
@@ -82,8 +82,8 @@ nav li{
 }
 
 #language option{
-    
-    
+
+
 }
 
 .quiz{
@@ -96,13 +96,13 @@ nav li{
 }
 
 .note {
-    width: 60%;
+    width: 70%;
     float: right;
 }
 
 #info{
     height:25px;
-    
+
 }
 
 #score{
@@ -165,7 +165,7 @@ nav li{
 }
 
 .ans-btn{
-    
+
     padding: 2%;
 }
 
@@ -180,7 +180,7 @@ nav li{
 }
 
 .submit-answer:hover{
-    
+
     background-color: #FF9933;
     padding: 16px;
     color: #fff;
@@ -211,7 +211,7 @@ nav li{
 /*Final Results*/
 
 .final-result{
-    
+
     text-align: center;
     padding: 10px;
     font-size: 1.5em;
@@ -270,13 +270,13 @@ nav li{
         margin-top: 3%;
 
     }
-    
+
     .choose-lang{
         display: block;
         margin-top: 25px;
         margin-left: 0px;
     }
-    
+
     #language{
         display: block;
     }
