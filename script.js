@@ -133,10 +133,10 @@ function renderResult() {
                 // {y: SCORES["yellow"], label: "Yellow", color: "#FFFF00"},
                 // {y: SCORES["blue"], label: "Blue", color: "#0000FF"},
                 // {y: SCORES["green"], label: "Green", color: "#008000"}
-                {y: SCORES["red"], label: "Red", color:"#EA2E25"},
-                {y: SCORES["yellow"], label: "Yellow", color: "#FEC106"},
-                {y: SCORES["blue"], label: "Blue", color: "#0071C1"},
-                {y: SCORES["green"], label: "Green", color: "#008001"}
+                {y: SCORES["red"], label: "D", color:"#EA2E25"},
+                {y: SCORES["yellow"], label: "I", color: "#FEC106"},
+                {y: SCORES["blue"], label: "C", color: "#0071C1"},
+                {y: SCORES["green"], label: "S", color: "#008001"}
             ]
         }]
 
