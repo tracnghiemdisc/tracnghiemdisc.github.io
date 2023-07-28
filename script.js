@@ -127,16 +127,16 @@ function renderResult() {
             type: "pie",
             startAngle: 120,
             yValueFormatString: "##",
-            indexLabel: "{label} {y}",
+            indexLabel: "{label}",
             dataPoints: [
                 // {y: SCORES["red"], label: "Red", color:"#FF0000"},
                 // {y: SCORES["yellow"], label: "Yellow", color: "#FFFF00"},
                 // {y: SCORES["blue"], label: "Blue", color: "#0000FF"},
                 // {y: SCORES["green"], label: "Green", color: "#008000"}
-                {y: SCORES["red"], label: "D", color:"#EA2E25"},
-                {y: SCORES["yellow"], label: "I", color: "#FEC106"},
-                {y: SCORES["blue"], label: "C", color: "#0071C1"},
-                {y: SCORES["green"], label: "S", color: "#008001"}
+                {y: SCORES["red"], label: "Dominance", color:"#EA2E25"},
+                {y: SCORES["yellow"], label: "Influence", color: "#FEC106"},
+                {y: SCORES["blue"], label: "Compliance", color: "#0071C1"},
+                {y: SCORES["green"], label: "Steadiness", color: "#008001"}
             ]
         }]
 
