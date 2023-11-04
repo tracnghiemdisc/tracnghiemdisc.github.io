@@ -72,7 +72,9 @@ document.querySelector(".quiz").style.display="none";
 document.querySelector(".final-result").style.display="none";
 
 
-document.querySelector(".choose-lang").addEventListener("click",function(){
+document.querySelector(".start-btn").addEventListener("click",function(){
+    document.getElementById('wrapper').style.display = 'none';
+
 
     document.getElementById("ques-left").textContent="Câu hỏi : " + (countQues+1) + "/" + CHOICES.length;
     document.querySelector(".quiz").style.display="block";
@@ -111,7 +113,34 @@ document.querySelector(".submit-answer").addEventListener("click",function(){
     document.querySelector('input[name="options"]:checked').checked = false
 });
 
+function iOS() {
+    return [
+            'iPad Simulator',
+            'iPhone Simulator',
+            'iPod Simulator',
+            'iPad',
+            'iPhone',
+            'iPod'
+        ].includes(navigator.platform)
+        || (navigator.userAgent.includes("iPhone"))
+        // iPad on iOS 13 detection
+        || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+
 document.querySelector(".view-results").addEventListener("click",function(){
+    document.querySelector(".quiz").style.display = "none";
+    if (iOS() || (navigator.userAgentData && navigator.userAgentData.mobile)) {
+        let chartContainer = document.getElementById('chartContainer');
+        chartContainer.style.height = '150px';
+        chartContainer.style.marginTop = '200px';
+        chartContainer.style.maxWidth = "300px";
+        chartContainer.style.marginLeft = "-65px";
+
+        document.querySelector('.note').style.width = "100%";
+
+    }
+
+
     document.querySelector(".final-result").style.display="block";
     renderResult();
 
@@ -150,11 +179,11 @@ document.getElementById("restart").addEventListener("click",function(){
 
 
 /*Smooth Scroll*/
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000);
-
-});
+// $(document).on('click', 'a[href^="#"]', function (event) {
+//     event.preventDefault();
+//     $('html, body').animate({
+//         scrollTop: $($.attr(this, 'href')).offset().top
+//     }, 1000);
+//
+// });
 /*Smooth Scroll End*/

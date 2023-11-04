@@ -13,6 +13,15 @@ nav{
 
 }
 
+.header {
+    height: 60%;
+    padding-top: 60px;
+    font-size: 5em;
+    font-weight: bold;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
 nav li{
     display: inline-block;
     margin-right: 30px;
@@ -30,7 +39,8 @@ nav li{
 }
 
 #wrapper{
-    background-image: url("home-page.jpg");
+    background-image: url("background-3.jpg");
+    /*background-image: url(background-1.jpg);*/
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -39,12 +49,12 @@ nav li{
 #form-box{
 /*    background-color: aqua;*/
     padding:1%;
-    top:80%;
-    position: absolute;
-    left:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.choose-lang{
+.start-btn{
     text-decoration: none;
     color: black;
     background-color:#fff;
@@ -59,7 +69,7 @@ nav li{
     transition: background-color 0.3s,border 0.2s, color 0.2s;
 }
 
-.choose-lang:hover{
+.start-btn:hover{
     background-color: #FF9933;
     color:#fff;
     cursor: pointer;
@@ -73,26 +83,18 @@ nav li{
     border-radius: 5px;
     cursor:pointer;
     border:2px solid black;
-
-
 }
 
 #language:hover{
     background-color:#fff;
 }
 
-#language option{
-
-
-}
 
 .quiz{
-    background: url("background-1.jpg") no-repeat center center fixed;
-    background-size: 130%;
-    text-align: center;
-/*    padding: 0%;*/
-    margin-top: 20px;
+    background-image: url("background-3.jpg");
+    background-size: cover;
     height: 100vh;
+    text-align: center;
 }
 
 .note {
@@ -165,7 +167,9 @@ nav li{
 }
 
 .ans-btn{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 2%;
 }
 
@@ -206,6 +210,11 @@ nav li{
     color: #fff;
     cursor: pointer;
     border-radius: 20px;
+}
+
+.choice {
+    width: 95%;
+    height: 50%;
 }
 
 /*Final Results*/
@@ -271,7 +280,7 @@ nav li{
 
     }
 
-    .choose-lang{
+    .start-btn{
         display: block;
         margin-top: 25px;
         margin-left: 0px;
